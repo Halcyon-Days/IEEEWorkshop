@@ -13,14 +13,7 @@ public class ArrayFunctions {
      * assume size > 0
      */
     public static int sumArray(int list[], int size) {
-        int sum = 0;
-        
-        for(int i = 0; i < size; i++) {
-            sum += list[i];
-        }
-        
-        
-        return sum;
+        //TO DO
     }
     
     /*
@@ -28,15 +21,7 @@ public class ArrayFunctions {
      * assume size > 0
      */
     public static int getLargestElement(int list[], int size) {
-        int largest = list[0];
-        
-        for(int i = 0; i < size; i++) {
-            if(largest < list[i]) {
-                largest = list[i];
-            }
-        }
-        
-        return largest;
+        //TO DO
     }
     
     /*
@@ -48,11 +33,6 @@ public class ArrayFunctions {
      * getXStrings(s, 3) = "hellothisis"
      */
     public static String getXStrings(String s[], int num) {
-        String returnString = "";
-        for(int i = 0; i < num; i++) {
-            returnString += s[i];
-        }
-        
-        return returnString;
+        //TO DO
     }
 }
