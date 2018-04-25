@@ -54,5 +54,15 @@ public class BankAccountTests {
         testAccount.makeDeposit(100, "123");
         assertEquals("Correct password amount test", testAccount.getAmount("123"), 200);
     }
+    
+    @Test
+    public void testID() {
+        BankAccount testAccount1 = new BankAccount("Chris", "123", 100);
+        BankAccount testAccount2 = new BankAccount("Chris", "123", 100);
+        BankAccount testAccount3 = new BankAccount("Chris", "123", 100);
+        
+        assertEquals("Check ID test", testAccount1.getID("123"), 0);
+        assertEquals("Check ID test", testAccount3.getID("123"), 2);
+    }
 
 }
